@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parisa Gheibi</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/c4254e24a8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="header" id="header">
+      <nav class="navbar">
+        <a class="logo" href="#">Parisa Gheibi</a>
+        <ul class="nav_menu" id="sidemenu">
+          <i class="fas fa-times" onclick="closemenu()"></i>
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact </a></li>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Hi, My name is</p>
+        <h1>Parisa Gheibi</h1>
+        <p>Product Manager</p>
+      </div>
+    </div>
+    <!--About Me -->
+    <div class="about" id="about">
+      <img class="about-col-1" src="images/Parisa_Gheibi.jpg" />
+      <div class="about-col-2">
+        <h1 class="sub-title">About Me</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis fugit
+          quam libero sed consequatur. Perferendis animi omnis architecto
+          debitis officia provident totam consectetur, vero rerum aut similique
+          voluptates accusantium reiciendis nam? Aut ducimus quibusdam vitae
+          officiis in qui reiciendis delectus, cum corrupti ipsa amet
+          praesentium molestias maxime laborum optio! Necessitatibus.
+        </p>
+        <div class="education">
+          <h3>My Education</h3>
+          <li>Manzumeh Kherad Institute</li>
+          <p>High School Diploma, Mathematics and Physics</p>
+          <p>2016 - 2020</p>
+          <li>Tehran University</li>
+          <p>Bachleour's degree, Financial Management</p>
+          <p>2016 - 2020</p>
+          <li>Tehran University</li>
+          <p>Minor, Economics</p>
+          <p>2021</p>
+        </div>
+      </div>
+    </div>
+    <!-- Skills -->
+    <div class="skills" id="skills">
+      <h1 class="sub-title">My Skills</h1>
+      <div class="skills-list">
+        <div>
+          <h2>AA</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores
+            aperiam dicta eius ipsa tempore repudiandae rerum. Ratione molestiae
+            amet laudantium.
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <h2>BB</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores
+            aperiam dicta eius ipsa tempore repudiandae rerum. Ratione molestiae
+            amet laudantium.
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <h2>CC</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores
+            aperiam dicta eius ipsa tempore repudiandae rerum. Ratione molestiae
+            amet laudantium.
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio -->
+    <div class="portfolio" id="portfolio">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="Images/1.jpg" />
+          <div class="layer">
+            <h3>HR Membership</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+              non.
+            </p>
+            <a href="#"></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="Images/2.jpg" />
+          <div class="layer">
+            <h3>HR Membership</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+              non.
+            </p>
+            <a href="#"></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="Images/3.jpg" />
+          <div class="layer">
+            <h3>HR Membership</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+              non.
+            </p>
+            <a href="#"></a>
+          </div>
+        </div>
+      </div>
+      <a class="btn">See More</a>
+    </div>
+    <!-- Contact -->
+    <div class="contact" id="contact">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fas fa-paper-plane"></i>pgheibi4@gmail.com</p>
+        <p><i class="fas fa-phone-square-alt"></i>09372862193</p>
+        <div class="social-icons">
+          <a href=""><i class="fab fa-telegram"></i></a>
+          <a href=""><i class="fab fa-twitter-square"></i></a>
+          <a href=""><i class="fab fa-instagram"></i></a>
+          <a href=""><i class="fab fa-linkedin"></i></a>
+        </div>
+        <a href="Parisa Gheibi-Resume.docx" download class="btn btn2"
+          >Download CV</a
+        >
+      </div>
+      <div class="contact-right">
+        <form>
+          <input type="text" name="Name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea
+            name="Message"
+            rows="6"
+            placeholder="Your Message"
+          ></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.left = "calc(100vw - 200px)";
+      }
+      function closemenu() {
+        sidemenu.style.left = "100vw";
+      }
+    </script>
+  </body>
+</html>

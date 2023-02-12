@@ -1,0 +1,379 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #080808;
+  color: #fff;
+}
+
+.header {
+  width: 100vw;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(198, 4, 198);
+  padding: 0.5rem 8rem;
+  z-index: 1;
+}
+
+.logo {
+  color: black;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+.nav_menu {
+  display: flex;
+  margin: 0.7rem 0;
+  column-gap: 2rem;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: 0.4s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.header-text {
+  font-size: 4rem;
+  padding: 20rem 0 7.5rem 5rem;
+}
+
+.header-text h1 {
+  color: rgb(198, 4, 198);
+}
+
+/* About Me */
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 7.5rem 5rem 0;
+}
+
+.about-col-1 {
+  width: 32rem;
+  height: 20rem;
+  border-radius: 1rem;
+}
+
+.about-col-2 {
+  width: 40rem;
+}
+
+.sub-title {
+  font-size: 3.5rem;
+  font-weight: bolder;
+  color: #fff;
+}
+.about-col-2 p {
+  font-size: 1.1rem;
+  color: #fff;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.education h3 {
+  padding: 10px 0;
+  font-size: 200%;
+  color: rgb(162, 4, 162);
+}
+
+/* Skills */
+.skills {
+  padding: 5rem 5rem 0;
+}
+
+.skills-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.skills-list div {
+  background-color: #b1ae9c;
+  padding: 2rem;
+  font-size: 1rem;
+  border-radius: 1rem;
+  transition: background 0.5s, transform 0.5s;
+}
+
+.skills-list div h2 {
+  font-size: 2rem;
+  font-weight: bolder;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.skills-list div p {
+  font-weight: bolder;
+  color: rgb(0, 0, 0);
+  margin-bottom: 1rem;
+}
+
+.skills-list div a {
+  text-decoration: none;
+  color: white;
+}
+.skills-list div:hover {
+  background-color: #9649cb;
+  transform: translateY(-10px);
+}
+/*Portfolio*/
+.portfolio {
+  padding: 5rem 5rem 0;
+}
+.work-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+.work {
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+.work img {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 1rem;
+  transition: transform 0.5s;
+}
+.layer {
+  width: 20rem;
+  height: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), #9649cb);
+  border-radius: 1rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 14px;
+  transition: height 0.5s;
+}
+.layer h3 {
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #fff;
+}
+.layer p {
+  color: #fff;
+}
+.work:hover img {
+  transform: scale(1.1);
+}
+.work:hover .layer {
+  height: 20rem;
+  transform: scale(1.1);
+}
+.btn {
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  border: 1px solid #9649cb;
+  padding: 14px 50px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #fff;
+  transition: background 0.5s;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #9649cb;
+}
+/*Contact Me*/
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 8rem 0;
+}
+.contact-left {
+  flex-basis: 35%;
+}
+.contact-left p {
+  margin-top: 30px;
+}
+.contact-left p i {
+  color: #9649cb;
+  margin-right: 15px;
+  font-size: 25px;
+}
+.social-icons {
+  margin-top: 30px;
+}
+.social-icons a {
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 30px;
+  color: #ababab;
+  display: inline-block;
+  transition: transform 0.5s;
+}
+.social-icons a:hover {
+  color: #9649cb;
+  transform: translateY(-5px);
+}
+.btn2 {
+  display: inline-block;
+  background-color: #9649cb;
+}
+form input,
+form textarea {
+  width: 90%;
+  border: 0;
+  outline: none;
+  background-color: #262626;
+  padding: 15px 1rem;
+  margin: 15px;
+  color: white;
+  font-size: 18px;
+  border-radius: 6px;
+}
+form .btn2 {
+  padding: 14px 60px;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+/*CSS for small screens*/
+nav .fas {
+  display: none;
+}
+@media only screen and (max-width: 480px) {
+  .navbar {
+    padding: 1rem 1.5rem;
+  }
+  .nav_menu {
+    flex-direction: column;
+    background-color: rgb(198, 4, 198);
+    position: fixed;
+    top: 0;
+    left: 100vw;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: left 0.75s;
+    margin: 0;
+  }
+  nav ul .fas {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+  nav .fas {
+    display: block;
+    font-size: 25px;
+    color: #fff;
+  }
+  nav ul li {
+    display: block;
+    margin: 15px;
+  }
+  nav ul li a::after {
+    display: none;
+  }
+  .header-text {
+    padding: 13rem 0 0.2rem 3rem;
+    font-size: 2rem;
+  }
+  .header-text h1 {
+    font-size: 3rem;
+  }
+  /* About Me */
+  .about {
+    flex-direction: column;
+  }
+  .about-col-1 {
+    width: 19rem;
+    height: 15rem;
+    padding-bottom: 2rem;
+  }
+  .about-col-2 {
+    width: 18rem;
+  }
+  .sub-title {
+    font-size: 40px;
+    text-align: center;
+  }
+  .about-col-2 {
+    font-size: 14px;
+  }
+  /* Skills */
+  .skills {
+    padding: 3rem 1.5rem 0;
+  }
+  .skills-list {
+    flex-direction: column;
+  }
+  .skills-list div:hover {
+    background-color: #b1ae9c;
+    transform: translateY(0);
+  }
+  /* Portfolio */
+  .portfolio {
+    padding: 3rem 1.5rem 0;
+  }
+  .work-list {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  /* Contact */
+  .contact {
+    flex-direction: column;
+    padding: 3rem 0 0;
+  }
+  .social-icons a:hover {
+    color: #ababab;
+    transform: translateY(0);
+  }
+  .contact-right {
+    padding: 0 1.5rem;
+  }
+  form .btn2 {
+    text-align: center;
+    margin-left: auto;
+    display: block;
+  }
+}
