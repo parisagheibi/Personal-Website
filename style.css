@@ -232,7 +232,8 @@ nav ul li a:hover::after {
 .contact-left p {
   margin-top: 30px;
 }
-.contact-left p i {
+.contact-left p img {
+  width: 2rem;
   color: #9649cb;
   margin-right: 15px;
   font-size: 25px;
@@ -240,18 +241,18 @@ nav ul li a:hover::after {
 .social-icons {
   margin-top: 30px;
 }
-.social-icons a {
+.social-icons img {
   text-decoration: none;
   font-size: 30px;
+  width: 2.5rem;
   margin-right: 30px;
-  color: #ababab;
   display: inline-block;
   transition: transform 0.5s;
 }
-.social-icons a:hover {
+/* .social-icons img:hover {
   color: #9649cb;
   transform: translateY(-5px);
-}
+} */
 .btn2 {
   display: inline-block;
   background-color: #9649cb;
@@ -276,7 +277,7 @@ form .btn2 {
   cursor: pointer;
 }
 /*CSS for small screens*/
-nav .fas {
+nav .icon {
   display: none;
 }
 @media only screen and (max-width: 480px) {
@@ -296,16 +297,15 @@ nav .fas {
     transition: left 0.75s;
     margin: 0;
   }
-  nav ul .fas {
+  nav ul .icon {
     position: absolute;
     top: 25px;
     left: 25px;
     cursor: pointer;
   }
-  nav .fas {
+  nav .icon {
     display: block;
     font-size: 25px;
-    color: #fff;
   }
   nav ul li {
     display: block;
